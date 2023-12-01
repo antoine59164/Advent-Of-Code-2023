@@ -1,5 +1,5 @@
 # Vendredi 01/12/2023 Part 1
-def exo1() -> int :
+def exo1() -> int:
     result = 0
     numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
     f = open("adventofcode.com_2023_day_1_input.txt", "r")
@@ -14,6 +14,17 @@ def exo1() -> int :
 
 
 # Vendredi 01/12/2023 Part 2
+
+def part2():
+    f = open("adventofcode.com_2023_day_1_input.txt", "r")
+
+    stringDigit = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+
+    for l in f:
+        print(l)
+        exit()
+
+
 def string_to_digit(texte):
     stringNumberToDigit = {
         'one': 1,
@@ -31,8 +42,6 @@ def string_to_digit(texte):
 
     if texte_lower in stringNumberToDigit:
         return stringNumberToDigit[texte_lower]
-    else:
-        return "Le texte ne correspond pas à un chiffre entre 1 et 9 en anglais."
 
 
-print(string_to_digit('two'))
+part2()
